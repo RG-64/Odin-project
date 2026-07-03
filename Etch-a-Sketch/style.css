@@ -1,0 +1,39 @@
+.squareSelected{
+    opacity:0.1;
+}
+
+#container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    align-content:center;
+    width:625px;
+    height:625px;
+    border:1px solid black;
+}
+
+#squares{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+#sqPerSide{
+    margin:12px;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}

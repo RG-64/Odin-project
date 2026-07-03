@@ -1,0 +1,16 @@
+.first,.second
+    {
+        font-size: 28px;
+        font:"Helvetica" "Times New Roman" sans-serif;
+    }
+
+.first
+    {
+        background-color: #000000;
+        color:rgb(255,255,255);
+    }
+
+.second
+    {
+        background-color: hsl(50,100%,75%);
+    }

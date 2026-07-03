@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./rock-paper-scissors.js" defer></script>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <div id="center">
+        <div class="score">
+            <div class="human">
+                <p>HUMAN</p>
+                <div class="humanScore">
+                    0
+                </div>
+            </div>
+            <div id="vs">VS</div>
+            <div class="bot">
+                <p>COMPUTER</p>
+                <div class="botScore">
+                    0
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outcome">
+        <p>Current Match</p>
+        <div class="result">
+            Match Incoming
+        </div>
+    </div>
+    <div class="game">
+        <div id="gameRoom">
+            <div class="player">You</div>
+            <div class="room">
+                <img class="humanImage" src="./images/default.jpeg" alt="a game of rock paper scissors is about to be played">
+                <div class="final">
+
+                </div>
+                <img id="botImage" src="./images/default.jpeg" alt="the computer is planning a mischievous plan to beat the player">
+            </div>
+            <div class="computer">Computer</div>
+        </div>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button id="rock">Play rock</button>
+                </li>
+                <li>
+                    <button id="paper">Play paper</button>
+                </li>
+                <li>
+                    <button id="scissors">Play scissors</button>
+                </li>
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>

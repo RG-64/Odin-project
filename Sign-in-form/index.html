@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" ></link>
+    <title>Sing-in form</title>
+</head>
+<body>
+<div id="left">
+        <div id="black">
+            <img id="logo" src="./images/odin-lined.png" alt="The head of Odin" width="50">
+            <div>ODIN</div>
+        </div>
+    <footer id="PicAuthor">Photo by Halie West on Unsplash</footer>
+</div>
+
+<div id="right">
+    <div id="warning">
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. 
+        <div id="special">
+            You <em>know</em> you want to.
+        </div>
+    </div>
+    <form action="" method="POST">   
+        <div id="shadow">
+            <fieldset>
+                <legend>
+                    Let's do this!
+                </legend>
+                <div class="fill">
+                    <label>FIRST NAME</label>
+                    <input name="FirstName" type="text"  maxlength="255" required>
+                </div>
+
+                <div class="fill">       
+                    <label>LAST NAME</label>
+                    <input name="LastName" type="text" maxlength="255" required>
+                </div> 
+
+                <div class="fill"> 
+                    <label>EMAIL</label>
+                    <input name="email" type="email" maxlength="255" required>
+                </div>
+
+                <div class="fill"> 
+                    <label>PHONE NUMBER</label>
+                    <input name="phone" type="tel" max="20" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required> 
+                </div>
+
+                <div class="fill"> 
+                    <label>PASSWORD</label>
+                    <input name="password" type="password" maxlength="255" required>
+                </div>
+
+                <div class="fill"> 
+                    <label>CONFIRM PASSWORD</label>
+                    <input name="ConfirmPassword" type="password" maxlength="255" required>
+                </div>
+            </fieldset>
+        </div>
+        <div id="other">
+            <button type="submit">Create Account</button>
+
+            <div id="login">
+                Already have an account?
+                <a>Log in</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

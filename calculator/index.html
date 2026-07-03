@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="title">The Ultimate Calculator</div>
+    <div id="calculator">
+        <div id="results">
+            <div id="history">
+                <div id="stored"></div>
+                <div id="calc">
+                    <div id="last"></div>
+                    <div id="beforeLast"></div>
+                    <div id="mid"></div>
+                    <div id="second"></div>
+                    <div id="first"></div>
+                </div>
+            </div>
+            <div id="display">
+
+            </div>
+        </div>
+        <div id="special">
+            <button class="memory" type="button" onclick="memoryR()">Recall</button>
+            <button class="memory" type="button" onclick="memoryM()">M</button>
+            <button class="memory" type="button" onclick="memoryPlus()">M+</button>
+            <button class="memory" type="button" onclick="memoryMinus()">M-</button>
+        </div>
+        <div id="action">
+            <div id="numbers">
+                <button class="number" type="button" onclick="storeNum(7)">7</button>
+                <button class="number" type="button" onclick="storeNum(8)">8</button>
+                <button class="number" type="button" onclick="storeNum(9)">9</button>
+                <button class="number" type="button" onclick="storeNum(4)">4</button>
+                <button class="number" type="button" onclick="storeNum(5)">5</button>
+                <button class="number" type="button" onclick="storeNum(6)">6</button>
+                <button class="number" type="button" onclick="storeNum(1)">1</button>
+                <button class="number" type="button" onclick="storeNum(2)">2</button>
+                <button class="number" type="button" onclick="storeNum(3)">3</button>
+                <button class="number" type="button" onclick="storeNum(0)">0</button>
+                <button class="operation point" type="button" onclick="addPoint()">.</button>
+                <button class="operation sign" type="button" onclick="toggleSign()">+/-</button>
+            </div>
+            <div id="operations">
+                <button class="operation" type="button" onclick="back()">back</button>
+                <button class="operation" type="button" onclick="blank()">clear</button>
+                <button class="operation" type="button" onclick="storeOp('+')">+</button>
+                <button class="operation" type="button" onclick="storeOp('-')">-</button>
+                <button class="operation" type="button" onclick="storeOp('*')">*</button>
+                <button class="operation" type="button" onclick="storeOp('/')">/</button>
+                <button class="operation equal" type="button" onclick="operate(runNum1,op,runNum2)">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

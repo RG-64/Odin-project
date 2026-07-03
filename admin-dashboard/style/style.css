@@ -1,0 +1,114 @@
+body{
+    display:grid;
+    grid-template-columns: 300px 3fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr;
+    font-family:"Roboto", sans-serif;
+}
+.sidebar{
+    display:grid;
+    grid-template-rows: 60px 300px 150px;
+    gap:50px;
+    grid-row:1/4;
+    background-color:rgb(0, 159, 212);
+    color:white;
+    font-family:"Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left:50px;
+}
+#name{
+    display:flex;
+    padding:10px;
+    padding-left:0px;
+    padding-bottom: 50px;
+    height:50px;
+    flex-direction:row;
+    justify-content: left;
+    align-items:center;
+    font-size:25px;
+}
+
+.tabs1{
+    display:grid;
+    grid-template-rows: repeat(6,45px) ;
+    justify-content: left;
+    align-content:center;
+}
+
+.tabs2{
+    display:grid;
+    grid-template-rows: repeat(3,45px) ;
+    justify-content: left;
+    align-content:center;
+}
+
+.tabs>img{
+    height:20px;
+}
+
+.actionbar{
+    grid-column:2/4;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 80px;
+    column-gap: 50px;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.toparea{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column: 1/3;
+    height:100px;
+}
+
+#bar{
+    font-size:30px;
+    background-color:rgb(214, 225, 230);
+    border-radius:15px;
+    height:30px;
+    width:600px;
+}
+
+#username{
+    display:grid;
+    grid-template-columns: 80px 300px;
+    grid-template-rows: 28px 52px;
+    justify-content: center;
+    align-items:center;
+    font-weight:700;
+    margin-right:300px;
+}
+
+#username .pfp{
+    grid-row:1/3;
+    padding-right:20px;
+}
+
+#at{
+    font-size:22px;
+}
+
+#actions{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#actions div{
+    background-color:rgb(0, 159, 212) ;
+    color:white;
+    border-radius: 24px;
+    padding:15px;
+    width:75px;
+    text-align: center;
+    font-weight:600;
+}
+
+
+.main{
+    background-color:rgb(214, 225, 230);
+}
